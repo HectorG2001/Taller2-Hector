@@ -41,7 +41,7 @@ df.describe()
 counts = df.Brand.value_counts()
 perc_churn = (counts.iloc[1] / (counts.iloc[0] + counts.iloc[1]+counts.iloc[3]+counts.iloc[4]+counts.iloc[5]+counts.iloc[6])) * 100
 print(f'Churn Rate = {perc_churn:.1f}%')
-pppppp
+
 # número de duplicados
 duplicates = len(df[df.duplicated()])
 print(f'Number of Duplicate Entries: {duplicates}')
@@ -54,7 +54,7 @@ print(f'Number of Missing Values: {missing_values}')
 types = df.dtypes.value_counts()
 
 print('Number of Features: %d'%(df.shape[1]))
-print('Number of Customers: %d'%(df.shape[0]))
+print('Number of Customers: %d'%(df.shape[1]))
 print('Data Types and Frequency in Dataset:')
 print(types)
 
@@ -76,3 +76,4 @@ plt.hist(df['Brand'])
 plt.show
 print("Punto uno literal 9")
 print("Punto dos literal 6")
+print("Punto tres literal 7")
