@@ -61,7 +61,7 @@ print(types)
 """## Pre-Processing"""
 
 # Conversión de características
-df['Brand'] = df['Brand'].map({'TVS': 1, 'Bajaj': 0, 'Yo':2, 'Honda':3, 'Mahindra':4, 'Hero':5, 'Suzuki':6, })
+df['Brand'] = df['Brand'].map({'TVS': 9, 'Bajaj': 0, 'Yo':2, 'Honda':3, 'Mahindra':4, 'Hero':5, 'Suzuki':6, })
 
 catcols = df.select_dtypes(exclude = ['int64','float64']).columns
 intcols = df.select_dtypes(include = ['int64']).columns
@@ -75,4 +75,4 @@ print('New Number of Features: %d'%(df.shape[2]))
 plt.hist(df['Brand'])
 plt.show
 print("Punto uno literal 9")
-print("liteal 7")
+print("Punto dos literal 6")
