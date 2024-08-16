@@ -70,9 +70,9 @@ floatcols = df.select_dtypes(include = ['float64']).columns
 # codificación
 df = pd.get_dummies(df, columns = catcols)
 
-print('New Number of Features: %d'%(df.shape[1]))
+print('New Number of Features: %d'%(df.shape[2]))
 
 plt.hist(df['Brand'])
 plt.show
-print("Hola")
+print("Punto uno literal 9")
 print("liteal 7")
