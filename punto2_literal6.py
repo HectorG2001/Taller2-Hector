@@ -77,3 +77,6 @@ plt.show
 print("Punto uno literal 9")
 print("Punto dos literal 6")
 print("Punto tres literal 7")
+
+juan = "Cambio 4.5"
+print(juan)
